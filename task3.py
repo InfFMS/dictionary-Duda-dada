@@ -5,4 +5,11 @@
 # ввод:
 # Абракадабра
 # Вывод
-# а-5 б-2 д-1 к-1 р-2
+# а-5 б-2 д-1 к
+Stroka=input('напишите любую строку:')
+NormStroka=Stroka.lower()
+dictionary={}
+count=0
+for i in NormStroka:
+    dictionary[NormStroka]
+
