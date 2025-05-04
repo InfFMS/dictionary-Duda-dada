@@ -11,4 +11,10 @@ numbers = {'dict1': [11, 20, 30, 17, 6, 24, 90, 15, 17],
           	'dict10': [29, 79, 18, 28, 18, 28, 32, 55]}
 # Напишите программу, которая удалит из значений словаря все четные числа.
 
-new_number =
+for i in numbers:
+	new_number = []
+	for el in numbers[i]:
+		if el%2!=0:
+			new_number.append(el)
+	numbers[i]=new_number
+	print(new_number)

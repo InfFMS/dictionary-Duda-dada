@@ -9,7 +9,13 @@
 Stroka=input('напишите любую строку:')
 NormStroka=Stroka.lower()
 dictionary={}
-count=0
 for i in NormStroka:
-    dictionary[NormStroka]
+    if i in dictionary:
+        dictionary[i]+=1
+    else:
+        dictionary[i]=1
+#print(dictionary)
+NormDict=[]
+NormDict.append(dictionary)
+print(NormDict)
 

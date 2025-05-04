@@ -3,6 +3,14 @@
 # которые хранятся по этим ключам складываются.
 # Пример:
 
-# Первый словарь: {'a': 100, 'b': 200, 'c':300}
-# Второй словарь: {'a': 300, 'b': 200, 'd':400}
-# Результат: {'a': 400, 'b': 400, 'd': 400, 'c': 300}
+dict1={'a': 100, 'b': 200, 'c':300}
+dict2={'a': 300, 'b': 200, 'd':400}
+NormDict2={}
+for el in dict2:
+    NormDict2[el]=dict2[el]
+for i in dict1:
+    if i in NormDict2:
+        NormDict2[i]=NormDict2[i]+dict1[i]
+    else:
+        NormDict2[i]=dict1[i]
+print(NormDict2)
