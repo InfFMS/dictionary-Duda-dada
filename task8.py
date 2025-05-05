@@ -2,7 +2,14 @@
 # Придумайте шифр, в котором буквы заменяются на какие-то символы
 # и реализуйте шифроватор и дешифроватор
 dictionary={'a': '?','b': '@','c': '%','d': '*','e': '{','f': ';','g': '+','h': '$','i': '=','j': '&','k': '^','~': '-','m': '`','n': '1','o': '2','p': '3','q': '4','r': '5','s': '6','t': '7','u': '8','v': '9','w': '10','x': '11','y': '12','z': '13'}
-letter=input("Введите букву на английском языке для перевода:")
-normLetter=letter.lower()
-if normLetter in dictionary:
-    print('Перевод шифра:', dictionary[normLetter])
+word=input("Введите слово на английском языке для перевода:")
+normWord=word.lower()
+newWord=[]
+for i in normWord:
+    if i in dictionary:
+        i=dictionary[i]
+        newWord.append(i)
+print(newWord)
+
+
+#print('Перевод шифра:', dictionary[normLetter])

@@ -15,7 +15,6 @@ for i in NormStroka:
     else:
         dictionary[i]=1
 #print(dictionary)
-NormDict=[]
-NormDict.append(dictionary)
-print(NormDict)
+for key in dictionary:
+    print(key, '-', dictionary[key],end=' ')
 
