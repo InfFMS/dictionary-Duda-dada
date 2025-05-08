@@ -4,3 +4,12 @@
 # и предлагает пользователю ввести слово для перевода. 
 # Если введенного слова нет в словаре выводится сообщение "нет такого слова".
 # Используйте словари для словаря:)
+dictionary={'bombinate': 'жжужать','cromulent': 'приемлемый','denouement': 'завершение','eloquence': 'красноречие','epiphany': 'прозрение','hiraeth': 'ностальгия','ineffable': 'неописуемый','nefarious': 'подлый','verisimilitude': 'достоверность'}
+print("Доступные слова для перевода:", dictionary)
+word=input("Введите слово на английском языке для перевода:")
+normWord=word.lower()
+if normWord in dictionary:
+    print('Перевод на русский язык:', dictionary[normWord])
+else:
+    print('нет такого слова')
+
