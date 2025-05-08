@@ -10,6 +10,21 @@ for i in normWord:
         i=dictionary[i]
         newWord.append(i)
 print(newWord)
+Newdictionary={}
+for key,value in dictionary.items():
+    if value in Newdictionary:
+        Newdictionary[value].append(key)
+    else:
+        Newdictionary[value]=[key]
+print(Newdictionary)
+anotherWord=input('Напишите сообщение на секртном коде для расшировки обратно')
+Obratno=[]
+for i in anotherWord:
+    if i in Newdictionary:
+        i=Newdictionary[i]
+        Obratno.append(i)
+print(Obratno)
+
 
 
 #print('Перевод шифра:', dictionary[normLetter])
